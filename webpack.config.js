@@ -16,7 +16,10 @@ export default {
   },
   plugins: [
     // https://webpack.js.org/guides/output-management/
-    new HtmlWebpackPlugin({ title: "cache", favicon: "hash-favicon.png" }),
+    new HtmlWebpackPlugin({
+      title: "vanilla-webpack-typescript",
+      favicon: "hash-favicon.png",
+    }),
   ],
   module: {
     rules: [
