@@ -19,12 +19,17 @@ export default {
     new HtmlWebpackPlugin({ title: "cache", favicon: "hash-favicon.png" }),
   ],
   module: {
-    // https://webpack.js.org/guides/typescript/
     rules: [
       {
+        // https://webpack.js.org/guides/typescript/
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        // https://webpack.js.org/guides/asset-management/
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

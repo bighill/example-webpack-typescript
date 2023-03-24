@@ -1,3 +1,5 @@
-export function foo() {
+function foo() {
   return "from foo";
 }
+
+export default foo;
