@@ -1,4 +1,4 @@
-# vanilla-webpack-typescript
+# Example webpack typescript
 
 Starter / Boilerplate / Example
 
